@@ -21,6 +21,5 @@ break;
 putchar(',');
 putchar(' ');
 }
-}
 return (0);
 }
