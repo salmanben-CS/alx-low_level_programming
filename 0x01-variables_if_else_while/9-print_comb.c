@@ -12,13 +12,12 @@
 /* The function generates  random integer between -RAND_MAX/2 and RAND_MAX/2.*/
 int main(void)
 {
-int i, j;
+int i;
 for (i = 48; i <= 57; ++i)
 {
-for (j = 48; j <= 57; ++j)
-{
 putchar(i);
-putchar(j);
+if (i == 9)
+break;
 putchar(',');
 putchar(' ');
 }
