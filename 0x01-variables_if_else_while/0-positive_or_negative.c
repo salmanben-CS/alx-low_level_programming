@@ -5,7 +5,7 @@
 /* more headers goes there */
 
 /* betty style doc for function main goes there */
-/* This function generates a random integer between -RAND_MAX/2 and RAND_MAX/2.*/
+/* The function generates  random integer between -RAND_MAX/2 and RAND_MAX/2.*/
 int main(void)
 {
 int n;
