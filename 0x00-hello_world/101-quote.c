@@ -15,7 +15,7 @@ int i = 0;
 while(i < strlen(mot) )
 {
 putchar(mot[i]);
-if(i = strlen(mot) - 1)
+if(i == strlen(mot) - 1)
 putchar('\n');
 i++;
 }
