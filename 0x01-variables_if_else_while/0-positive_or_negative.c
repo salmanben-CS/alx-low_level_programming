@@ -5,6 +5,9 @@
 /* more headers goes there */
 
 /* betty style doc for function main goes there */
+/* This function generates a random integer between -RAND_MAX/2 and RAND_MAX/2,
+* and prints whether the integer is positive, negative, or zero.
+*/
 int main(void)
 {
 int n;
