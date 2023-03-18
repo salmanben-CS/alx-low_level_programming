@@ -12,6 +12,7 @@
 /* The function generates  random integer between -RAND_MAX/2 and RAND_MAX/2.*/
 int main(void)
 {
+int i;
 for (i = 0; i <= 9; ++i)
 {
 printf("%d", i);
