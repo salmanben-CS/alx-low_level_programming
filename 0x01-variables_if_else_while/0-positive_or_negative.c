@@ -5,16 +5,14 @@
 /* more headers goes there */
 
 /* betty style doc for function main goes there */
-/* This function generates a random integer between -RAND_MAX/2 and RAND_MAX/2,
-* and prints whether the integer is positive, negative, or zero.
-*/
+/* This function generates a random integer between -RAND_MAX/2 and RAND_MAX/2.*/
 int main(void)
 {
 int n;
 
 srand(time(0));
 n = rand() - RAND_MAX / 2;
-
+/* check n */
 if (n > 0)
 {
 printf("%d is positive\n", n);
