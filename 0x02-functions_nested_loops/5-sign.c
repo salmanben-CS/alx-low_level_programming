@@ -6,9 +6,6 @@
 * Return: 1 if is > 0 and 0 if is == 0
 * and -1 if is <0
 */
-/**
- * n:the number that will be checked 
- */
 int print_sign(int n)
 {
 if (n > 0)
