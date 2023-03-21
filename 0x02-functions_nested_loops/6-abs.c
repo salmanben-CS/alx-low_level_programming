@@ -2,7 +2,7 @@
 #include "main.h"
 /**
 * -abs - check the sign.
-*
+*@n:the variable that the func will return its abs
 * Return: the absolute value of the value passed
 */
 int _abs(int n)
