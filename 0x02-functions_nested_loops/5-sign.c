@@ -2,7 +2,7 @@
 #include "main.h"
 /**
 * print_sign - check the sign.
-*
+*@n:the variable that the function well check its sign
 * Return: 1 if is > 0 and 0 if is == 0
 * and -1 if is <0
 */
