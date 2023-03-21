@@ -12,7 +12,7 @@ for (row = 0; row <= 9; row++)
 for (col = 0; col <= 9; col++)
 {
 printf("%2d", row * col);
-if (col < 9 && col != '81')
+if (col < 9 && col != 81)
 {
 printf(", ");
 }
