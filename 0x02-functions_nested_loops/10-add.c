@@ -1,9 +1,10 @@
 #include<stdio.h>
 #include "main.h"
 /**
-* add: add two numbers
-* Return: 1 if is > 0 and 0 if is == 0
-* and -1 if is <0
+* add -add two numbers
+* Return: the sum of the two numbers
+* @a:the first parameter added
+* @b:the second parameter added
 */
 int add(int a, int b)
 {
