@@ -5,7 +5,8 @@
 *
 * Return: Always 0
 */
-int main(){
+int main(void)
+{
 char mot[20] = "_putchar";
 int i = 0;
 while (mot[i] != '\0')
