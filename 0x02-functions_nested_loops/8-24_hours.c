@@ -15,13 +15,13 @@ if (i < 10)
 {
 printf("0");
 }
-printf("%d",i);
+printf("%d", i);
 putchar(':');
 if (j < 10)
 {
 printf("0");
 }
-printf("%d",j);
+printf("%d", j);
 putchar('\n');
 }
 }
