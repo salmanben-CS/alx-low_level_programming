@@ -19,6 +19,7 @@ printf("%d", row * col);
 if (col < 9)
 {
 printf(", ");
+}
 else
 {
 printf("\n");
