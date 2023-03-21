@@ -1,9 +1,9 @@
 #include<stdio.h>
 #include "main.h"
 /**
-* islower - check if the letter is lower or no.
+* _islower - check if the letter is lower or no.
 *
-* Return: 1 if is lower. and 0 if no
+* Return: 1 if c is lower. and 0 if no
 */
 int _islower(int c)
 {
