@@ -2,7 +2,7 @@
 #include "main.h"
 /**
 * islower - check if the letter is lower or no.
-*
+*@c:letter taht will be checked
 * Return: 1 if is lower. and 0 if no
 */
 int _islower(int c)
