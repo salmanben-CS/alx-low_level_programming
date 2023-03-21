@@ -4,18 +4,14 @@
 *9-times_table.c - prints the 9 times table, starting with 0.
 *Return : void
 */
-#include<stdio.h>
 void times_table(void)
 {
-int i, j, k;
-for(i = 0; i < 10; i++)
+int row, col;
+for (row = 0; row <= 9; row++)
 {
-k = 0;
-for(j = 0; j < 9; j++)
+for (col = 0; col <= 9; col++)
 {
-printf("%d",k);
-printf(",  ");
-k = k + i;
+printf("%3d, ", row * col);
 }
 printf("\n");
 }
