@@ -13,7 +13,7 @@ while (mot[i] != '\0')
 {
 putchar(mot[i]);
 i++;
-} 
+}
 putchar('\n');
 return (0);
 }
