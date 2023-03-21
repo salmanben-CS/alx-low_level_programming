@@ -1,8 +1,9 @@
 #include<stdio.h>
 #include "main.h"
 /**
-* print_last_digit .
-*
+* print_last_digit - it prints and returns the last digit n.
+*@n:the variable that the fun will prints and returns
+its lat digit
 * Return: value of last digit
 */
 int print_last_digit(int n)
