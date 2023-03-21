@@ -11,11 +11,14 @@ for (row = 0; row <= 9; row++)
 {
 for (col = 0; col <= 9; col++)
 {
-printf("%2d", row * col);
+if (row * col < 10)
+{
+printf(" ");
+}
+printf("%d", row * col);
 if (col < 9)
 {
 printf(", ");
-}
 else
 {
 printf("\n");
