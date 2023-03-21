@@ -1,7 +1,8 @@
 #include<stdio.h>
 #include "main.h"
 /**
-* print_alphabet_x10 - prints the alphabet, in lowercase,10 times, followed by a new line.
+* print_alphabet_x10 - prints the alphabet,
+* in lowercase,10 times, followed by a new line.
 *
 * Return: don't have return
 */
@@ -15,6 +16,6 @@ for (c = 'a'; c <= 'z'; c++)
 {
 putchar(c);
 }
-}
 putchar('\n');
+}
 }
