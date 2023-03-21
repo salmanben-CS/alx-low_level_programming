@@ -11,7 +11,7 @@ char mot[20] = "_putchar";
 int i = 0;
 while (mot[i] != '\0')
 {
-putchar(mot[i]);
+_putchar(mot[i]);
 i++;
 }
 putchar('\n');
