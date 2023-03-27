@@ -13,6 +13,6 @@ for (i = 0; str[i] != '\0'; i++)
 n++;
 n = n / 2;
 for (i =  n; str[i] != '\0'; i++)
-_putchar(s[i]);
+_putchar(str[i]);
 _putchar('\n');
 }
