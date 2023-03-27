@@ -1,1 +1,1 @@
-repo description
+scripts descriptions
