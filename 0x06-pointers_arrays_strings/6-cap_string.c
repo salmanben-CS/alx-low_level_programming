@@ -8,25 +8,23 @@
  */
 char *cap_string(char *s)
 {
-int i, ascii, ascii_before;
-ascii = s[0];
-if (ascii >= 97 && ascii <= 120)
+int i = 0;
+int word_start = 1;
+while (s[i] != '\0')
 {
-ascii -= 32;
-s[0] = ascii;
+if (word_start && s[i] >= 'a' && s[i] <= 'z')
+{
+s[i] -= 'a' - 'A';
+word_start = 0;
 }
-for (i = 1; s[i] != '\0'; i++)
+else if (s[i] == ' ' || s[i] == '\t' || s[i] == '\n' ||
+s[i] == ',' || s[i] == ';' || s[i] == '.' ||
+s[i] == '!' || s[i] == '?' || s[i] == '"' ||
+s[i] == '(' || s[i] == ')' || s[i] == '{' || s[i] == '}')
 {
-ascii = s[i];
-ascii_before = s[i - 1];
-if (ascii >= 97 && ascii <= 120 &&
-((s[i - 1] == ' ' || s[i - 1] == '\t' || s[i - 1] == '\n')
-||
-(ascii_before < 65) || (ascii_before > 120)))
-{
-ascii -= 32;
-s[i] = ascii;
+word_start = 1;
 }
+i++;
 }
 return (s);
 }
