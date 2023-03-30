@@ -19,7 +19,8 @@ for (i = 1; s[i] != '\0'; i++)
 {
 ascii = s[i];
 ascii_before = s[i - 1];
-if (ascii >= 97 && ascii <= 120 && ((s[i - 1] == ' ' || s[i - 1] == '\t' || s[i - 1] == '\n')
+if (ascii >= 97 && ascii <= 120 &&
+((s[i - 1] == ' ' || s[i - 1] == '\t' || s[i - 1] == '\n')
 ||
 (ascii_before < 65) || (ascii_before > 120)))
 {
