@@ -2,9 +2,9 @@
 #include "main.h"
 /**
  * _strcmp - compares  two strings.
- * @s1:the first str
- * @s2:the second string
- * Return:0 if the strings are equal,else it returns the ascii code,
+ * @s1 : the first str
+ * @s2 : the second string
+ * Return : 0 if the strings are equal,else it returns the ascii code,
  * of the difference between the first two characters not equal
  */
 int _strcmp(char *s1, char *s2)
