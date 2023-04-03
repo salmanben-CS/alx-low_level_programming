@@ -11,12 +11,11 @@
  */
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
-int i;
-for (i = 0; i < n; i++)
+int i = 0;
+for (; n > 0; i++)
 {
-if (src[i] == '\0')
-break;
 dest[i] = src[i];
+n--;
 }
 return (dest);
 }
