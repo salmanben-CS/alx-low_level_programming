@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "main.h"
 /**
  * _memset -set the first n bytes of memory block pointed to
