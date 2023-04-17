@@ -1,11 +1,16 @@
 #include <stdlib.h>
-#include "main.h"
+#include "dog.h"
+
+
 /**
- * free_dog - free dog
- * @d : variable of dog_t type
- *Return: pointer variable of type dog_t
- */
-void free_dog(dog_t *d)
-{
-free(d);
-}
+* free_dog - frees memory allocated for a struct dog
+* @d: struct dog to free
+*/
+		void free_dog(dog_t *d)
+		{
+		if (d)
+		{
+		free(d->name);
+		free(d->owner);
+		free(d);
+		}
