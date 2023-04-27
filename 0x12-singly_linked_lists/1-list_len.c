@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "main.h"
+#include "lists.h"
 /**
  * list_len -  count the number of elements in a linked list_t list.
  * @h: pointer points on the first element of the list
