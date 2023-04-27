@@ -10,12 +10,12 @@
 void free_list(list_t *head)
 {
 list_t *tmp;
+list_t *parc = head;
 if (head == NULL)
 {
 printf("Error\n");
 return;
 }
-list_t *parc = head;
 while (parc != NULL)
 {
 tmp = parc;
