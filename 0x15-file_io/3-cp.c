@@ -28,10 +28,6 @@ int main(int argc, char **argv)
 	return (0);
 }
 
-/**
- * 
- *
- */
 
 int open_files(char *f_from, char *f_to)
 
@@ -49,7 +45,6 @@ int open_files(char *f_from, char *f_to)
 	to_fd = open(f_to, O_CREAT | O_EXCL | O_WRONLY, 0664);
 	if (to_fd == -1)
 	{
-		/*if (errno == EEXIST) was removed*/
 		to_fd = open(f_to, O_WRONLY | O_TRUNC);
 		if (to_fd == -1)
 		{
