@@ -1,23 +1,16 @@
-#include <main.h>
-
-/**
- * display_error - Displays an error message and exits with status code 98.
- * @message: The error message to display.
- */
+#include "main.h"
 void display_error(const char *message)
 {
     fprintf(stderr, "Error: %s\n", message);
     exit(98);
 }
 
-/**
- * display_elf_header - Displays the information contained in the ELF header.
- * @header: Pointer to the ELF header structure.
- */
 void display_elf_header(const Elf64_Ehdr *header)
 {
+    int i;
+
     printf("Magic: ");
-    for (int i = 0; i < EI_NIDENT; ++i)
+    for (i = 0; i < EI_NIDENT; ++i)
     {
         printf("%02x ", header->e_ident[i]);
     }
@@ -38,27 +31,24 @@ void display_elf_header(const Elf64_Ehdr *header)
     printf("Entry point address: 0x%lx\n", header->e_entry);
 }
 
-/**
- * main - Entry point of the program.
- * @argc: The number of command-line arguments.
- * @argv: Array of command-line arguments.
- * Return: 0 on success, 98 on error.
- */
 int main(int argc, char *argv[])
 {
+    const char *filename;
+    int fd;
+    Elf64_Ehdr header;
+
     if (argc != 2)
     {
         display_error("Usage: elf_header elf_filename");
     }
 
-    const char *filename = argv[1];
-    int fd = open(filename, O_RDONLY);
+    filename = argv[1];
+    fd = open(filename, O_RDONLY);
     if (fd == -1)
     {
         display_error("Failed to open the file");
     }
 
-    Elf64_Ehdr header;
     if (read(fd, &header, sizeof(header)) != sizeof(header))
     {
         display_error("Failed to read the ELF header");
@@ -77,4 +67,3 @@ int main(int argc, char *argv[])
     close(fd);
     return (0);
 }
-
