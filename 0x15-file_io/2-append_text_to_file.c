@@ -1,12 +1,11 @@
 #include "main.h"
-
-/*
- * This Appends text at the end of a file and run
- * 
- * Always Return: 1 if the file exist, -1 if the file does not exist, or if you don't have the required permissions to write to the file.
- * 
+/**
+ * append_text_to_file - This Appends text at the end of a file and run
+ * @filename: the name of file
+ * @text_content: added text to file
+ * Return: 1 if the file exist, -1 if the file does not exist,
+ * or if you don't have the required permissions to write to the file.
  */
-
 int append_text_to_file(const char *filename, char *text_content)
 
 {
