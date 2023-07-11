@@ -1,10 +1,5 @@
 #ifndef MAIN_H
 #define MAIN_H
-/*
- * 
- * Header file containing prototypes for all functions.
- * 
- */
 
 #include <sys/types.h>
 #include <sys/stat.h>
